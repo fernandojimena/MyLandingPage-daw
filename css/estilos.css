@@ -1,0 +1,227 @@
+:root {
+/* Colores */
+    --fondo: #474A8A;
+    --header: #2d2f617e;
+    --footer: #2d2f61;
+    --alternativo: #bcc1fd;
+    --texto: #B0B3D6;
+    --neutro: #FFFFFF;
+    --destacado: #FA0577;
+    --tarjeta: #3C035F;
+/* tamaños de fuente */
+    --txt00:5em;
+    --txt01:2em;
+    --txt02:1.3em;
+    --txt03:1.1em;
+}
+/* Links */
+a:link{color: var(--texto);}
+a:visited{color: var(--neutro);}
+a:hover{color: var(--destacado);}
+
+
+/* config general */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+hr {color: white;}
+#header, #main, #footer {
+    width: 100%;
+    background-color: var(--fondo);
+    color: var(--alternativo);
+}
+#footer {
+    background-color: var(--footer);}
+#header {
+    background-color: var(--header);    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+/* Headear */
+
+.navbar {
+    width: 80%;
+    padding: 20px 0px;
+    margin: 0 auto;
+}
+.navbar img {
+    max-height: 30px;
+}
+.navbar span {
+    float: right;
+}
+.navbar span a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: var(--txt02);
+}
+
+/* Footer */
+#footer{
+    clear: both;
+    padding: 25px 0px;
+    text-align: center;
+    font-size: var(--txt03);
+}
+#footer p:first-of-type {
+    padding-bottom: 5px;
+}
+
+/* main */
+#main {
+    margin: 0 auto;
+}
+/* Main banner */
+.main-banner {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(picture/Banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    
+}
+.main-banner  h1 {
+    padding-top: 45vh;
+    font-size: var(--txt00);
+}
+.main-banner  h2 {
+    font-size: var(--txt01);
+}
+.main-banner img {
+    width: 50px;
+    margin-top: 20px;
+}
+
+/* Main presentacion*/
+.main-presentation{
+    width: 100%;
+    background-color: var(--tarjeta);
+}
+.main-presentation article{
+    width: 80%;
+    margin: 0 auto;
+}
+.main-p-img {
+    min-width: 400px;
+    min-height: 600px;
+    float: left;
+    background-image: url(picture/presentacion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.main-p-texto {
+    min-height: 600px;
+    padding: 50px 0px;
+    margin-left: 450px;
+    color: var(--destacado)
+}
+.main-p-texto h4 {
+    color: var(--destacado);
+    font-size: var(--txt00);
+}
+.main-p-texto p {
+    margin-top: 150px;
+    font-size: var(--txt01);
+}
+
+/* Main marketing*/
+.main-marketing {
+    clear: both;
+    width: 80%;
+    padding: 150px 0px;
+    margin: 0 auto;
+    border: 1px solid var(--destacado);
+    text-align: center;
+}
+.main-marketing > article {
+    margin: 0 auto;
+    width: 50%;
+}
+.main-marketing .titulo {
+    font-size: var(--txt01);
+    font-weight: bold;
+    color:var(--neutro);
+}
+.main-marketing p, .main-marketing ul li {
+    font-size: var(--txt02);
+}
+
+.main-marketing article:nth-child(2){
+    margin-top: 60px;
+    list-style: none;
+} 
+.main-marketing article:nth-child(2) > ul{
+    list-style: none;
+} 
+/* Main cubos*/
+.main-trescubos {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.main-t-1, .main-t-2, .main-t-3, .main-por-1, .main-por-2, .main-por-3{
+    width: 33.33%;
+    height: 250px;
+    float: left;
+    overflow: hidden;
+    padding: 40px 0px;
+}
+.main-t-1:hover {
+    background-color: var(--tarjeta);
+    color: var(--destacado);
+}
+.main-t-2:hover {
+    background-color: var(--destacado);
+    color: var(--tarjeta);
+}
+.main-t-3:hover{
+    background-color: var(--tarjeta);
+    color: var(--destacado);
+}
+.main-t-1 > p, .main-t-2 > p, .main-t-3 > p {
+    width: 50%;
+    margin: 0 auto;   
+}
+.main-t-1 p:first-child, .main-t-2 p:first-child, .main-t-3 p:first-child{
+    font-size: var(--txt02);
+    /* color: white; */
+}
+.main-porfolio {
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0px;
+    background-color: var(--destacado);
+}
+.main-por-container {
+    width: 60%;
+    min-height: 600px;
+    margin: 0 auto;
+}
+.man-por-capsula{
+    min-height: 620px;
+    margin: 0 auto;
+    color: var(--neutro);
+}
+.man-por-capsula img{
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.man-por-capsula p{
+    font-size: var(--txt03);
+    max-width: 300px;
+    margin: 0 auto;
+}
