@@ -82,7 +82,7 @@ hr {color: white;}
     height: 100vh;
     margin: 0 auto;
     text-align: center;
-    background-image: url(picture/Banner.jpg);
+    background-image: url("picture/Banner.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -115,7 +115,7 @@ hr {color: white;}
     min-width: 400px;
     min-height: 600px;
     float: left;
-    background-image: url(picture/presentacion.png);
+    background-image: url("picture/presentacion.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
